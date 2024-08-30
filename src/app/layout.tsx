@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReactQueryProvider>
-          <ClerkProvider>{children}</ClerkProvider>
-        </ReactQueryProvider>
+        <ClerkProvider>
+          <ReactQueryProvider>{children}</ReactQueryProvider>
+        </ClerkProvider>
       </body>
     </html>
   )
